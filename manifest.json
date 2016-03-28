@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+
+  "name": "Inboxnil",
+  "description": "A Chrome extension to help you get to inbox zero",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://mail.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://mail.google.com/*"],
+      "js": ["inboxnil.js"]
+    }
+  ],
+}
